@@ -1,0 +1,75 @@
+#page-list-orphanages {
+    display: flex;
+}
+
+#page-list-orphanages main {
+    flex: 1;
+}
+
+.orphanage-details {
+    width: 700px;
+    margin: 64px auto;
+
+    background: #FFFFFF;
+    border: 1px solid #D3E2E5;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.orphanage-details fieldset {
+    border: 0;
+}
+
+.orphanage-details fieldset legend {
+    width: 75%;
+
+    font-size: 40px;
+    line-height: 34px;
+    color: #5C8599;
+    font-weight: 700;
+
+    border-bottom: 1px solid #D3E2E5;
+    margin: 40px auto;
+    padding-top: 40px;
+    padding-bottom: 24px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.orphanage-details fieldset ul {
+    width: 75%;
+
+    font-size: 22px;
+    line-height: 34px;
+    color: #5C8599;
+    font-weight: 400;
+    text-align: center;
+
+    border: 5px solid #CCC;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px 0 24px 15px;
+
+    list-style: none;
+    overflow: hidden;
+}
+
+
+
+.orphanage-details-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-orphanage {
+    width: 100%;
+    margin: 10px 20px 30px 20px;
+    border-bottom: 1px solid #CCC;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
