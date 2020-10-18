@@ -68,6 +68,10 @@ function OrphanagesMap() {
                 })}
             </Map>
 
+            <div className="qtde-orphanages">
+                { `${ orphanages.length } orfanatos cadastrados` }
+            </div>
+
             <Link to="/orphanages/list" className="list-orphanage">
                 <FiList size={32} color="#FFF" />
             </Link>

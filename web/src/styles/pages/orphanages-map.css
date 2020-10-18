@@ -43,6 +43,25 @@
     z-index: 5;
 }
 
+#page-map .qtde-orphanages {
+    position: absolute;
+    right: 110px;
+    top: 10px;
+
+    z-index: 10;
+
+    width: 15%;
+    height: 64px;
+    background: #15c3d6;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s;
+}
+
 #page-map .create-orphanage {
     position: absolute;
     right: 40px;
@@ -64,8 +83,8 @@
 
 #page-map .list-orphanage {
     position: absolute;
-    right: 120px;
-    bottom: 40px;
+    right: 40px;
+    top: 10px;
 
     z-index: 10;
 
@@ -81,6 +100,10 @@
     transition: background-color 0.2s;
 }
 
+#page-map .qtde-orphanages:hover {
+    background: #17d6eb;
+}
+
 #page-map .create-orphanage:hover {
     background: #17d6eb;
 }
@@ -88,6 +111,7 @@
 #page-map .list-orphanage:hover {
     background: #17d6eb;
 }
+
 
 #page-map .map-popup .leaflet-popup-content-wrapper {
     background: rgba(255, 255, 255, 0.8);

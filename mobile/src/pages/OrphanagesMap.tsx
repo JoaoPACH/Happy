@@ -28,11 +28,15 @@ export default function OrphanagesMap() {
     })
 
     function handleNavigateToOrphanageDetails(id: number) {
-        navigation.navigate('OrphanageDetails', { id });
+      navigation.navigate('OrphanageDetails', { id });
     }
 
     function handleNavigateToCreateOrphanage() {
       navigation.navigate('SelectMapPosition');
+    }
+
+    function handleNavigateToListOrphanages() {
+      navigation.navigate('ListOrphanages');
     }
 
     return (
@@ -72,7 +76,11 @@ export default function OrphanagesMap() {
             </MapView>
 
             <View style={styles.footer}>
-                <Text style={styles.footerText}>{orphanages.length} orfanatos encontrados</Text>
+                <Text style={styles.footerText}>{ orphanages.length } orfanatos encontrados</Text>
+
+                <RectButton style={styles.listOrphanageButton} onPress={handleNavigateToListOrphanages}>
+                  <Feather name="list" size={20} color="#FFF" />
+                </RectButton>
 
                 <RectButton style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
                   <Feather name="plus" size={20} color="#FFF" />
@@ -133,6 +141,18 @@ const styles = StyleSheet.create({
     createOrphanageButton: {
       width: 56,
       height: 56,
+      backgroundColor: '#15c3d6',
+      borderRadius: 20,
+  
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+
+    listOrphanageButton: {
+      width: 56,
+      height: 56,
+      marginLeft: 50,
+
       backgroundColor: '#15c3d6',
       borderRadius: 20,
   
